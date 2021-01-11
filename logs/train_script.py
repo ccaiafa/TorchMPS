@@ -26,7 +26,7 @@ parser.add_argument('--num_train', type=int, default=60000, metavar='NT',
 parser.add_argument('--batch_size', type=int, default=100, metavar='BS',
                     help='minibatch size for training')
 
-parser.add_argument('--bond_dim', type=int, default=120, metavar='BD',
+parser.add_argument('--bond_dim', type=int, default=80, metavar='BD',
                     help='bond dimension for our MPS')
 parser.add_argument('--num_epochs', type=int, default=100, metavar='NE',
                     help='number of epochs to train for')
