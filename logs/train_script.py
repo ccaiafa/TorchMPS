@@ -119,8 +119,8 @@ test_set = datasets.MNIST(torchmps_dir+'/mnist', download=True,
 # Put MNIST data into Pytorch tensors
 train_inputs = torch.stack([data[0].view(input_dim) for data in train_set])
 test_inputs = torch.stack([data[0].view(input_dim) for data in test_set])
-train_labels = torch.stack([data[1] for data in train_set])
-test_labels = torch.stack([data[1] for data in test_set])
+train_labels = torch.stack([torch.tensor(data[1]) for data in train_set])
+test_labels = torch.stack([torch.tensor(data[1]) for data in test_set])
 
 # Get the desired number of input data
 train_inputs, train_labels = train_inputs[:num_train], train_labels[:num_train]
