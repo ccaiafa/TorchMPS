@@ -23,7 +23,7 @@ parser.add_argument('--l2_reg', type=float, default=0., metavar='WD',
                     help='L2 regularization (default: 0.)')
 parser.add_argument('--num_train', type=int, default=60000, metavar='NT',
                     help='how many MNIST images to train on')
-parser.add_argument('--batch_size', type=int, default=256, metavar='BS',
+parser.add_argument('--batch_size', type=int, default=64, metavar='BS',
                     help='minibatch size for training')
 
 parser.add_argument('--bond_dim', type=int, default=120, metavar='BD',
