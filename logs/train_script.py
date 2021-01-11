@@ -21,14 +21,14 @@ parser.add_argument('--init_std', type=float, default=1e-9, metavar='STD',
 
 parser.add_argument('--l2_reg', type=float, default=0., metavar='WD',
                     help='L2 regularization (default: 0.)')
-parser.add_argument('--num_train', type=int, default=1000, metavar='NT',
+parser.add_argument('--num_train', type=int, default=60000, metavar='NT',
                     help='how many MNIST images to train on')
 parser.add_argument('--batch_size', type=int, default=100, metavar='BS',
                     help='minibatch size for training')
 
-parser.add_argument('--bond_dim', type=int, default=20, metavar='BD',
+parser.add_argument('--bond_dim', type=int, default=120, metavar='BD',
                     help='bond dimension for our MPS')
-parser.add_argument('--num_epochs', type=int, default=10, metavar='NE',
+parser.add_argument('--num_epochs', type=int, default=100, metavar='NE',
                     help='number of epochs to train for')
 parser.add_argument('--num_test', type=int, default=1000, metavar='NTE',
                     help='how many MNIST images to test on')
