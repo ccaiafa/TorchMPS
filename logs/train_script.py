@@ -41,7 +41,7 @@ parser.add_argument('--merge_threshold', type=int, default=2000, metavar='TH',
 parser.add_argument('--cutoff', type=float, default=1e-10, metavar='CO',
                     help='sets our SVD truncation')
 
-parser.add_argument('--use_gpu', type=int, default=0, metavar='GPU',
+parser.add_argument('--use_gpu', type=int, default=1, metavar='GPU',
                     help='Whether we use a GPU (if available)')
 parser.add_argument('--random_path', type=int, default=0, metavar='PATH',
                     help='Whether to set our MPS up along a random path')
