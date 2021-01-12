@@ -14,7 +14,7 @@ from utils import joint_shuffle
 
 # Get parameters for testing
 parser = argparse.ArgumentParser(description='Hyperparameter tuning')
-parser.add_argument('--lr', type=float, default=1e-4, metavar='LR',
+parser.add_argument('--lr', type=float, default=1e-5, metavar='LR',
                     help='learning rate (default: 1e-4)')
 parser.add_argument('--init_std', type=float, default=1e-9, metavar='STD',
                     help='size of noise in initialization (default: 1e-9)')
